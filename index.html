@@ -6,58 +6,60 @@
 <head>
 <title>
 Homepage </title>
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 <style>
+	body{font-family: sans-serif;}
 .logo{float:left; padding-left:14%; color:#FDFDFF;}
-.top-header-wrapper {float:left;width:90%; background-color:#48484B; height:100px; padding-left:5%; padding-right:5%;}
-.menu {color:white; list-style:none; float:right;margin-top:40px;padding-right:10%;}
-.menu li  { color:white;  float:left; margin-right:20px; }
+.top-header-wrapper {float:left;width:90%; background-color:#FF5733; height:100px; padding-left:5%; padding-right:5%;}
+.menu {
+	color:white; list-style:none; float:right;
+	padding-right:10%;	
+	height:100px;
+	}
+.menu li  {
+	;
+	 color:white;  float:left;  
+	width:150px;
+    height:100px; 
+    text-align:center;
+    padding:0 0 0 0;
+    line-height:100px; 
+    cursor:pointer
+    }
 .menu li a {    color: white;
     link: blue;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 20px;
-    font-family: sans-serif;}
-.banner-section-wrapper { float:left;width:68%; height:250px;background-color:white;margin-top:2%;margin-left:17%;margin-right:10%; }
+    font-family: sans-serif;
+    
+    }
+ .menu li:hover{background-color:#FE7E50;} 
+.banner-section-wrapper { float:left;width:68%; height:250px;margin-top:2%;margin-left:17%;margin-right:11%; }
 .banner-section-wrapper-left {float:left; width:32%; background-color:#DCDCDC; height:250px;border:2px solid #DCDCDC;}
 .banner-section-wrapper-right {float:right; width:65%; background-color:#48484B;height:250px;border:2px solid #DCDCDC;}
-.middle-wrapper { float:left;widht-68%;height:300px;margin-left:17%;margin-right:10%; } 
-.middle-wrapper-section-left {float:left; width:32%; background-color:white; height:300px;} 
-.middle-wrapper-section-left-inner {float:left;width:30%; background-color:#48484B; height:90px;border:2px solid #DCDCDC;margin-right:5%;}
-.middle-wrapper-section-centre {float:left; width:31%; background-color:white; height:300px;}
-.middle-wrapper-section-centre-inner {float:left;width:30%; background-color:#48484B; height:90px;border:2px solid #DCDCDC;margin-right:5%;}
-.middle-wrapper-section-right {float:left; width:31%; background-color:white; height:300px;}
+.middle-wrapper { float:left;widht-67%;height:450px;margin-left:16%;margin-right:10%;margin-top:2% } 
+.middle-wrapper-section-left,.middle-wrapper-section-centre,.middle-wrapper-section-right {float:left; width:30%; height:450px;background-color:white;margin-left:1%;} 
+.middle-wrapper-section-left-inner,.middle-wrapper-section-centre-inner {float:left;width:30%; background-color:#48484B; height:90px;border:2px solid #DCDCDC;margin-right:5%;} 
 .middle-wrapper-section-right-inner {float:left;width:30%;background-color:#48484B;height:90px;margin-right:5%;border:2px solid #DCDCDC;}
-.peragraph {float:left; width:70%;height:300px; margin-left:17%;margin-right10%;margin-top:5%;}
-.peragraph-first {float:left; width:25%; background-color:white;height:300px;}
-.peragraph-first-inner {float:left;width:80%; background-color:#48484B; height:90px;;border:2px solid #DCDCDC;}
-.peragraph-first-inner li{text-align:center;color:#808080;list-style:none;padding-top:15%;}
-.peragraph-first h2 {float:left;font-size:15px;color:#808080;width:100%}
-.peragraph-first p {text-align:justify;padding:0 5px 0 2px;}
-.peragraph-second{float:left; width:25%; background-color:white;height:300px;}
-.peragraph-second-inner {float:left;width:80%; background-color:#48484B; height:90px;;border:2px solid #DCDCDC;}
-.peragraph-second h2 {float:left;font-size:15px;color:#808080;width:100%}
-.peragraph-second-inner li{text-align:center;color:#808080;list-style:none;padding-top:15%;}
-.peragraph-second p {text-align:justify;padding:0 5px 0 2px;}
-.peragraph-third{float:left; width:25%; background-color:white;height:300px;}
-.peragraph-third-inner {float:left;width:80%; background-color:#48484B; height:90px;;border:2px solid #DCDCDC;}
-.peragraph-third h2 {float:left;font-size:15px;color:#808080;width:100%}
-.peragraph-third-inner li{text-align:center;color:#808080;list-style:none;;padding-top:15%;}
-.peragraph-third p {text-align:justify;padding:0 5px 0 2px;}
-.peragraph-fourth{float:left; width:25%; background-color:white;height:300px;}
-.peragraph-fourth-inner {float:left;width:80%; background-color:#48484B; height:90px;;border:2px solid #DCDCDC;}
-.peragraph-fourth h2 {float:left;font-size:15px;color:#808080;width:100%}
-.peragraph-fourth-inner li{text-align:center;color:#808080;list-style:none;padding-top:15%;}
-.peragraph-fourth p {text-align:justify;padding:0 px 0 0px;}
-.footer-wrapper {float:left;width:90%; background-color:#48484B; height:100px; padding-left:5%; padding-right:5%;}
-.footer-wrapper-inner {float:left; width:79%;background-color:#48484B;height:30px; margin-left:10%;margin-right:5%;}
+.peragraph {float:left; width:68%;height:300px; margin-left:17%;margin-right10%;margin-top:5%;}
+.peragraph-first,.peragraph-fourth,.peragraph-third,.peragraph-second {float:left; width:25%;height:300px;}
+.peragraph-first-inner,.peragraph-second-inner,.peragraph-third-inner,.peragraph-fourth-inner  {float:left;width:80%; background-color:#48484B; height:90px;;border:2px solid #DCDCDC;}
+.peragraph-first-inner li,.peragraph-second-inner li,.peragraph-third-inner li,.peragraph-fourth-inner li{text-align:center;color:#808080;list-style:none;padding-top:15%;}
+.peragraph-first h2,.peragraph-second h2,.peragraph-third h2,.peragraph-fourth h2 {float:left;font-size:15px;color:#808080;width:100%}
+.peragraph-first p,.peragraph-second p,.peragraph-third p,.peragraph-fourth p {text-align:justify;padding:0 15% 0 0%;} 
+.footer-wrapper {float:left;width:100%; background-color:#48484B; height:100px;margin:1% 0% 1% 0%;}
+.footer-wrapper-inner {float:left; width:70%;background-color:#48484B;height:30px; margin-left:15%;margin-right:5%;}
+
 </style>
 </head>
 <body>
+<div style="width:100%; margin:0px padding:0px;">
     <div class="top-header-wrapper">
 		<h1 class="logo"> Basic86  </h1>
 		<u1 class="menu">
-			 <li> <a href="myfile.html">Home </a>  </li> 
+			 <li> <a href="index.html">Home </a>  </li> 
 			 <li> <a href="about.html"> About </a> </li> 
 			 <li> <a href="services.html">services </a> </li> 
 			 <li> <a href="contacts.html" target="_blank">Contact </a> </li>  
@@ -65,8 +67,8 @@ Homepage </title>
 	</div>	
     <div class="banner-section-wrapper">
             <div class="banner-section-wrapper-left">
-		        <h2 style="float:left;color:#808080;font-size:40px;padding:0 7px 0 10px;"> Eu justo augue <br> estas </h2>
-			    <p style="float:left;padding:0 7px 0 10px;"> Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.</p> 
+		        <h2 style="float:left;color:#808080;font-size:40px;padding:0 7px 0 10px;"> Eu justo augue estas </h2>
+			    <p> Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.</p> 
 			    <li style="float:right;list-style:none;font-size:15px;margin-right:5%;color:red;"> Read more- </li>
             </div>		
             <div class="banner-section-wrapper-right">
@@ -104,7 +106,7 @@ Homepage </title>
 	                <li > 215*100px</li>
 	            </div> 
                 <h2>INDONECTEUS FACILIS</h2>
-                <p>Nullamlacus dui ipsum conseque <br>loborttis non euisque morbi penas<br>dapibulum orna. </p> 
+                <p>Nullamlacus dui ipsum let us loborttis non euisque morbi penas dapibulum orna. </p> 
 			    <u1 style="float:right;color:red;padding-right:15%"> Read more- </u1> 
             </div>
             <div class="peragraph-second">
@@ -112,7 +114,7 @@ Homepage </title>
 	                <li> 215*100px</li>
 	            </div>
                 <h2>INDONECTEUS FACILIS</h2>
-                <p>Nullamlacus dui ipsum conseque <br>loborttis non euisque morbi penas<br>dapibulum orna. </p> 
+                <p>Nullamlacus dui ipsum let us loborttis non euisque morbi penas dapibulum orna. </p> 
 			    <u1 style="float:right;color:red;padding-right:15%"> Read more- </u1> 
             </div>
             <div class="peragraph-third">
@@ -120,7 +122,7 @@ Homepage </title>
 	                <li> 215*100px</li>
 	            </div>
                 <h2>INDONECTEUS FACILIS</h2>
-                <p>Nullamlacus dui ipsum conseque <br>loborttis non euisque morbi penas<br>dapibulum orna. </p> 
+                <p>Nullamlacus dui ipsum let us loborttis non euisque morbi penas dapibulum orna. </p> 
 			    <u1 style="float:right;color:red;padding-right:15%"> Read more- </u1> 
             </div>
             <div class="peragraph-fourth">
@@ -128,7 +130,7 @@ Homepage </title>
 	                <li> 215*100px</li>
 	            </div>
                 <h2>INDONECTEUS FACILIS</h2>
-                <p>Nullamlacus dui ipsum conseque <br>loborttis non euisque morbi penas<br>dapibulum orna. </p> 
+                <p>Nullamlacus dui ipsum let us loborttis non euisque morbi penas dapibulum orna. </p> 
 			    <u1 style="float:right;color:red;margin:right:15%;padding-right:15%"> Read more- </u1> 
             </div>	
     </div>
@@ -138,6 +140,7 @@ Homepage </title>
                 <ul style="float:left;font-size:15px;color:white;">Copyright@2012-All Rights Reserved-Domain Name</ul>  
             </div>
     </div>
+</div>
 </body>
 </html>
 
