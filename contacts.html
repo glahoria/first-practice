@@ -22,7 +22,6 @@
     cursor:pointer
     }
 .menu li a {    color: white;
-    link: blue;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
@@ -31,28 +30,30 @@
     
     }
  .menu li:hover{background-color:#FE7E50;}   
-.contact {float:left;background-color:#48484B; background-image:url("186774.jpg");; width:100%;height:600px;;padding:5% 0 10% 0%;border-top:2px solid #FF5733}
+.contact {float:left;background-color:#48484B; background-image:url("186774.jpg");; width:100%;height:600px;margin-top:2px;padding:5% 0% 10% 0%;border-top:2px solid #FF5733;}
 .banner-wrapper {float:left;width:100%;height:200px;text-align:center}
 .banner-wrapper-left {float:left;width:60%;height:200px;}
 .banner-wrapper-left h1 {text-align:center;width:100%;font-size:60px;color:#FAE5D3;margin-top:10%}
 .banner-wrapper-right {float:left;width:40%;height:200px;}
-.tollfree {float:left;width:70%;height:100px;margin:0% 15% 0% 15%; }
+.tollfree {float:left;width:70%;height:100px;margin:0% 0% 0% 0%; }
 .tollfree h3 {float:left;color:#FAE5D3;margin:15%;width:100%}
-.email {float:left;border-top:3px solid #FF5733;width:70%;height:100px;margin:0% 15% 0% 15%; }
+.email {float:left;border-top:3px solid #FF5733;width:70%;height:100px;margin:0% 0% 0% 0%; }
 .email h4 {float:left;color:#FAE5D3;width:100%}
 .form-wrapper {float:left;width:75%;height:400px;;margin-left:14%;margin-right:5%;;}
-.form {float:left;width:60%;height:400px;margin-top:1%;border-top:2px solid #FF5733;border-right:2px solid  #FF5733}
-.form-left {float:left;width:88%;height:300px;margin-top:5%;margin-left:10%;}
-.firstname, .lastname, .state, .distic, .city {float:left; width:95%;height:40px;margin:2% 2% 2% 2%;}
-.submit {float:left; width:95%;height:40px;margin:1% 2% 0% 2%; }
+.form {float:left;width:60%;height:400px;margin-top:1%;border-top:2px solid #FF5733;border-right:2px solid  #FF5733;color:white;}
+.form-left {float:left;width:88%;height:300px;margin-top:15%;margin-left:10%;}
+.form-left h3 {float:left;width:100%;height40px; font-size:30px;margin:2% 0% 0% 12%;}
+.firstname, .youremail {float:left; width:80%;height:40px;margin:2% 2% 2% 10%;;}
+.message {float:left; width:95%;height:40px;margin:2% 2% 2% 10%;}
+.submit {float:left; width:95%;height:40px;margin:1% 2% 0% 10%;color:white; }
 .location {float:left;width:39%;height:400px;margin-top:1%;border-top:2px solid #FF5733;border-left:2px solid #FF5733}
 .location h2 {float:left;width:100%;font-size:60px;color:#FAE5D3;margin-top:10%;margin-left:35%}
 .map{float:right;width:80%;height:200px;background-color:red;}
-.footer-wrapper {float:left;width:100%; background-color:0D0D0D; height:100px;;}
+.footer-wrapper {float:left;width:100%; background-color:0D0D0D; height:100px;margin-top:2px;}
 .footer-wrapper-inner {float:left; width:80%;background-color:0D0D0D;height:30px; margin:0 10%;;}
 input{width:350px; height:50px; border:2px solid black; background-color:#222222; color:#ffffff; padding:2%;}
 label{ color:#ffffff; font-weight:bold;}
-button{float:left;width:350px; height:50px; border:2px solid #ffffff; background-color:#FF5733; color:#ffffff; padding:2%; font-size:18px; font-weight:bold; margin:30px 0 50px 150px;}
+button{float:left;width:350px; height:50px; border:2px solid #ffffff; background-color:#FF5733; color:#ffffff; padding:2%; font-size:18px; font-weight:bold; margin:4px 0 50px 0px;}
 </style>
 </head>
 <body>
@@ -63,7 +64,7 @@ button{float:left;width:350px; height:50px; border:2px solid #ffffff; background
 			 <li> <a href="index.html">Home </a>  </li> 
 			 <li> <a href="about.html"> About </a> </li> 
 			 <li> <a href="services.html">services </a> </li> 
-			 <li> <a href="contact.html">Contact </a> </li>  
+			 <li> <a href="contacts.html">Contact </a> </li>  
 		</u1>
 	</div>
 	 <div class="contact">
@@ -83,26 +84,20 @@ button{float:left;width:350px; height:50px; border:2px solid #ffffff; background
 		    <div class="form-wrapper  ">
 			          <div class="form">
 				            <div class="form-left ">
+								         <h3>FILL THE FORM</h3> 
                                     <form action="/action_page.php"> 
 						                    <div class="firstname">
-								                 <label style="width:150px; float:left;">FIRST NAME</label> 
-								                 <input type="text" name="Firstname" placeholder="FIRST NAME" >  
+								                 <label style="width:150px; float:left;"> </label> 
+								                 <input type="text" name="Firstname" placeholder="YOUR NAME..." >  
                                             </div>
-					                        <div class="lastname ">
-                                                    <label style="width:150px; float:left;"> LAST NAME </label>
-							                        <input type="text" name="lastname" > 
-							                </div>
-						                    <div class="state">
-                                                    <label style="width:150px; float:left;">STATE </label> 
-							                        <input type="text" name="state" > <select> </select> 
+					                        <div class="youremail ">
+                                                    <label style="width:150px; float:left;">  </label>
+							                        <input type="text" name="your name" placeholder="YOUR EMAIL...." > 
+							           
 						                    </div>
-					                        <div class="distic">
-                                                     <label style="width:150px; float:left;">DISTIC</label>
-                       		                         <input type="text" name="distic"> <select> </select>
-						                   </div>
-					                       <div class="city">
-                                                     <label style="width:150px; float:left;">CITY </label>
-							                         <input type="city" name="city"> <select> </select> 
+					                        <div class="message">
+                                                     <label style="width:150px; float:left;"> </label>
+                       		                         <input type="text" name="message" placeholder="Add your message......"> 
                                             </div>
                                             <div class="submit">
 						                           <button type="submit" form="nameform" value="Submit">Submit</button>
