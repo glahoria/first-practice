@@ -1,0 +1,79 @@
+<html lang="en">
+     <!-- Site Metas -->
+    <title>Education. to-help-your mind-level-upgade</title>  
+    
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/log.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+
+    <!-- Bootstrap CSS -->
+   
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
+   
+    <!-- Site CSS -->
+   <link rel="stylesheet" href="index.css"/>
+   <style>
+	.error{color:red !important;}
+   </style>
+</head>
+<body >
+ <div class="row mt-5">
+ <div class="col-md-3">&nbsp;</div>
+ <div class="col-md-6 bg-light rounded">
+   <form action="javascript:void(0);" id="registerFrom">
+      <h1 class="text-center font-weight-bold">LOGIN HERE </h1>
+	     <h3 class="font-weight-bold w-100">First Name </h3>
+	    <input type="text" name="first_name" class="form-control" id="first"placeholder="First Name..."/>
+		 <h3 class="font-weight-bold w-100">Last Name </h3>
+	    <input type="text" name="last_name" class="form-control" id="last" placeholder="Last Name..."/>
+		 <h3 class="font-weight-bold w-100">Email </h3>
+	    <input type="text" name="eamil" class="form-control" id="email" placeholder="Email..."/>
+		 <h3 class="font-weight-bold w-100">Password</h3>
+	    <input type="password" name="password" class="form-control" id="password"  placeholder="Password..."/>
+		<h3 class="font-weight-bold w-100">Conform-Password</h3>
+	    <input type="password" name="confirm_password" class="form-control" id="conform-password"  placeholder="Conform-Password..."/>
+		<label class="w-100 mt-2"><input type="radio" id="radio"/><a href="#" class="ml-2">Term&conditions</a></label>
+		<button class="btn btn-success mt-2 btn-lg" id="button">SUBMIT
+   </form>
+</div>
+ <div class="col-md-3">&nbsp;</div>
+</div>
+ <script>
+ $(function(){
+	$('#registerFrom').validate({
+		rules:{
+			first_name : { required:true  },
+			last_name : { required:true  },
+			eamil : { 
+				required:true,
+				email:true	
+			},
+			password : { required:true  },
+			confirm_password : { 
+			required:true,
+				equalTo:"#password"	
+			},
+		},
+		messages:{
+			first_name : { required:"Please enter first name"  },
+			last_name : { required:"Please enter first name"  },
+			eamil : { required:"Please enter first name"  },
+			password : { required:"Please enter first name"  },
+			confirm_password : { 
+				required:"Please confirm password",
+				equalTo:"Password does not match."	
+			},
+		}
+	});
+ });
+ </script>
+</body>
+</html>
